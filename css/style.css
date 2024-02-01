@@ -1,0 +1,605 @@
+/* TODO >> ============== Common CSS Start ============== */
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  color: #ffffff;
+  font-weight: 300;
+  box-sizing: border-box;
+  font-family: "Lato",
+    sans-serif;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+/* TODO >> ============== Common CSS Start ============== */
+
+/* TODO >> ============== Menu part CSS Start ============== */
+.menu_part {
+  background-color: #131e29;
+  border-bottom: 1px solid
+    #435265;
+}
+
+.menu_container {
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ! Menu logo css */
+.logo {
+  flex-grow: 1;
+  flex-basis: 20%;
+  padding-top: 16px;
+}
+
+/* ! Main menu css */
+.main_menu {
+  flex-grow: 1;
+  flex-basis: 80%;
+}
+
+.main_menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.main_menu ul li > a {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 35px;
+  line-height: 100px;
+  transition: all linear 0.4s;
+}
+
+.main_menu ul li > a:hover {
+  color: #4bcaff;
+}
+/* TODO >> ============== Menu part CSS End   ================ */
+
+/* TODO >> ============== Banner part CSS Start ============== */
+.banner_part {
+  padding: 250px 0 116px;
+  background: url("../images/banner.jpg")
+    no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  border-bottom: 4px solid
+    #4bcaff;
+}
+
+.banner_container {
+  display: flex;
+}
+
+/* ! Banner-img css */
+.banner_img {
+  flex-grow: 1;
+  flex-basis: 40%;
+}
+
+.banner_img img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 625px;
+}
+
+/* ! Banner text css */
+.banner_text {
+  flex-grow: 1;
+  flex-basis: 60%;
+}
+
+.banner_text h1 {
+  font-size: 48px;
+}
+
+.banner_text h1 > span {
+  font-weight: 700;
+}
+
+.banner_text p {
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+/* ! Banner buttons css */
+.banner_btn {
+  padding: 40px 0 50px;
+}
+
+.banner_btn a {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 24px 50px;
+  margin-right: 36px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  transition: all linear 0.4s;
+}
+
+.banner_btn a:hover {
+  background-color: #4bcaff;
+  border-color: transparent;
+  border-bottom-color: #277697;
+}
+
+/* ! Banner icons css */
+.banner_icons p {
+  font-size: 18px;
+}
+
+.banner_icons p > a {
+  color: #4bcaff;
+  font-size: 25px;
+  width: 52px;
+  height: 52px;
+  line-height: 52px;
+  border-radius: 50%;
+  margin-left: 12px;
+  text-align: center;
+  background-color: #030303;
+  transition: all linear 0.4s;
+}
+
+.banner_icons
+  p
+  > .banner_icon_margin {
+  margin-left: 18px;
+}
+
+.banner_icons p > a:hover {
+  background-color: #fff;
+  color: #030303;
+}
+/* TODO >> ============== Banner part CSS End   =============== */
+
+/* TODO >> ============== Feature part CSS start ============== */
+.feature_part {
+  padding: 50px 0 90px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid
+    #e7e7e7;
+  text-align: center;
+}
+
+/* ! Feature head css */
+.feature_head h2 {
+  color: #414042;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.feature_head p {
+  color: #414042;
+  font-size: 20px;
+  margin-top: -4px;
+}
+
+/* ! feature inner css */
+.feature_inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ! feature inner-main css */
+.feature_inner_main {
+  flex-grow: 1;
+  flex-basis: 25%;
+}
+
+/* ! feature inner-main {i} css */
+.feature_inner_main i {
+  color: #ffffff;
+  font-size: 70px;
+  width: 162px;
+  height: 162px;
+  line-height: 162px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #4bcaff;
+  margin: 70px 0 30px;
+  cursor: pointer;
+}
+
+/* ! feature inner-main {h4} css */
+.feature_inner_main h4 {
+  color: #414042;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all linear 0.4s;
+}
+
+.feature_inner_main:hover h4 {
+  color: #4bcaff;
+}
+
+/* ! feature inner-main {p} css */
+.feature_inner_main p {
+  color: #838383;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 20px 34px 0;
+}
+/* TODO >> ============== Feature part CSS End ================ */
+
+/* TODO >> ============== Gallery part CSS Start ============== */
+.gallery_part {
+  padding: 50px 0 110px;
+  text-align: center;
+}
+
+/* ! gallery inner css */
+.gallery_inner {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+}
+
+/* ! gallery inner-main css */
+.gallery_inner_main {
+  flex-grow: 1;
+  flex-basis: 23%;
+  margin-top: 215px;
+}
+
+/* ! gallery inner-main {h4} css */
+.gallery_inner_main h4 {
+  color: #4bcaff;
+  background-color: #447084;
+  padding: 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+}
+
+.gallery_inner_main
+  h4::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 160px;
+  left: 0px;
+  top: -160px;
+  background-color: #4bcaff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.gallery_inner_main p {
+  padding: 20px 24px 0;
+}
+/* TODO >> ============== Gallery part CSS End ================ */
+
+/* TODO >> ============== Action part CSS Start =============== */
+.action_part {
+  padding: 80px 0 200px;
+  background: url("../images/action-banner.jpg")
+    no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.action_text h2 {
+  font-size: 48px;
+}
+
+.action_text h2 > span {
+  font-weight: 700;
+}
+
+.action_text p {
+  text-align: left;
+  padding: 30px 310px 0 300px;
+}
+
+.action_text p > span {
+  display: block;
+  padding-top: 24px;
+}
+/* TODO >> ============== Action part CSS End ================= */
+
+/* TODO >> ============== Price part CSS Start ================ */
+.price_part {
+  padding: 70px 0;
+  text-align: center;
+}
+
+/* ! price inner css */
+.price_inner {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  margin-top: 80px;
+}
+
+/* ! price inner-main css */
+.price_inner_main {
+  flex-grow: 1;
+  flex-basis: 31.62%;
+  border: 1px solid #dad7d7;
+  padding: 20px 0;
+  transition: all linear 0.4s;
+}
+
+.price_inner_main:hover {
+  transform: scaleY(1.1);
+}
+
+/* ! price inner-main {h4} css */
+.price_inner_main h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #dad7d7;
+  padding: 6px 0 24px;
+  text-transform: uppercase;
+  transition: all linear 0.4s;
+}
+
+.price_inner_main:hover h4 {
+  color: #4bcaff;
+}
+
+/* ! price inner-main {span} css */
+.price_inner_main span {
+  font-size: 85px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #91c46b;
+  padding: 25px;
+  display: block;
+}
+
+.price_inner .bg-blue span {
+  background-color: #4bcaff;
+}
+
+.price_inner .bg-orange span {
+  background-color: #fd7c00;
+}
+
+/* ! price inner-main {p} css */
+.price_inner_main p {
+  color: #dad7d7;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+  padding: 20px 90px;
+}
+
+/* ! price inner-main {a} css */
+.price_inner_main a {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fefefe;
+  background-color: #91c46b;
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.price_inner .bg-blue a {
+  background-color: #4bcaff;
+}
+
+.price_inner .bg-orange a {
+  background-color: #fd7c00;
+}
+/* TODO >> ============== Price part CSS End ================== */
+
+/* TODO >> ============== Testimonial part CSS Start ========== */
+.testimonial_part {
+  padding: 40px 0 110px;
+  border-top: 1px solid
+    #e7e7e7;
+  text-align: center;
+}
+
+/* ! testimonial inner css */
+.testi_inner {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+/* ! testimonial shape css */
+.testi_shape {
+  flex-basis: 140px;
+  position: relative;
+}
+
+.testi_shape a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  );
+}
+
+/* ! testimonial text css */
+.testi_text {
+  flex-basis: 344px;
+}
+
+/* ! testimonial inner {p} css */
+.testi_text p {
+  color: #4bcaff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  padding-top: 33px;
+  text-align: left;
+}
+
+/* ! testimonial inner {span} css */
+.testi_text p > span {
+  display: block;
+  text-align: right;
+  font-style: italic;
+  color: #4bcaff;
+  font-weight: 700;
+}
+/* TODO >> ============== Testimonial part CSS End ============ */
+
+/* TODO >> ============== Download part CSS Start ============= */
+.download_part {
+  padding: 37px 0 30px;
+  background-color: #414042;
+  text-align: center;
+}
+
+/* ! download text css */
+.download_text p {
+  color: #fff;
+  font-size: 55px;
+  font-weight: 700;
+}
+
+/* ! download text {a} css */
+.download_btn a {
+  background-color: #4bcaff;
+  border-color: #4bcaff;
+  border-bottom-color: #277697;
+}
+/* TODO >> ============== Download part CSS End =============== */
+
+/* TODO >> ============== Footer part CSS Start =============== */
+.footer_part {
+  padding: 110px 0;
+  background: url("../images/footer-map.jpg")
+    no-repeat center;
+  background-size: cover;
+}
+
+/* ! footer form css */
+.footer_form {
+  background-color: rgba(
+    107,
+    207,
+    248,
+    0.8
+  );
+  padding: 30px 30px 16px;
+  border-radius: 6px;
+  text-align: center;
+  margin: 0 auto;
+  width: 325px;
+  border: 1px solid
+    rgba(0, 0, 0, 0.15);
+}
+
+/* ! footer form {h4} css */
+.footer_form h4 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* ! footer form {input} css */
+.footer_form input {
+  display: block;
+  color: #414042;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  border: 0;
+  width: 270px;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+/* ! footer form {textarea} css */
+.footer_form textarea {
+  color: #414042;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 15px;
+  width: 270px;
+  height: 145px;
+  border-radius: 4px;
+  border: 0;
+  resize: none;
+  text-align: center;
+}
+
+/* ! footer form {placeholder} css */
+.footer_form
+  input::placeholder {
+  color: #d3d3d3;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer_form
+  textarea::placeholder {
+  color: #d3d3d3;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* ! footer form {button} css */
+.footer_form button {
+  color: #4bcaff;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 18px 80px;
+  margin-top: 20px;
+  border: 0;
+  border-bottom: 4px solid
+    #313032;
+  border-radius: 10px;
+  background-color: #414042;
+  cursor: pointer;
+}
+
+/* ! footer bottom css */
+.footer_btm {
+  background-color: #414042;
+  height: 110px;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ! footer bottom {span} css */
+.footer_btm span {
+  color: #707071;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 110px;
+}
+/* TODO >> ============== Footer part CSS End ================= */
